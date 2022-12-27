@@ -24,9 +24,10 @@ header{
     flex-wrap: wrap;
     align-items: center;
     background: #1a1a1a ;
-    padding:2rem;
+    padding:1.5rem;
     border-radius: 50px;
     padding-left: 5rem;
+    margin: 2rem 2rem 2rem 2rem;
 
 }
 
@@ -72,7 +73,7 @@ nav a::after {
     left: 0;
     background-color: antiquewhite;
     transform-origin: bottom right;
-    transition: 0.25s ease-out;
+    transition: 0.5s ease-out;
     border-radius: 25px;
  
    
@@ -87,13 +88,16 @@ nav a:hover::after{
     filter:invert(80%);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     color: antiquewhite;
+    cursor: pointer;
     
 }
 #magnifyingGlass{
     padding: 0 1rem 0;
+    cursor: pointer;
 }
 #shoppingCart{
     padding: 0 1rem 0 0;
+    cursor: pointer;
 
 }
 
@@ -144,7 +148,7 @@ img{
         justify-content: center;
       }
       nav a{
-        font-size: 25px;
+        font-size: 20px;
       }
   
   
