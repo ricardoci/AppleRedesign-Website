@@ -276,6 +276,8 @@ footer ul a{
 
 
 
+
+
   @media screen and (min-width: 768px) and (max-width:1023px) {
     
    
@@ -311,7 +313,7 @@ footer ul a{
         justify-content: center;
       }
       nav a{
-        font-size: 25px;
+        font-size: 15px;
       }
       header{
         margin: 2rem 2rem 2rem 2rem;
@@ -323,7 +325,7 @@ footer ul a{
         margin: 2rem 2rem 2rem 2rem;
 
       }.boxes{
-        padding: 2rem;
+        padding: 1rem;
       }
       #box3 img{
       height: 279px;
@@ -331,6 +333,11 @@ footer ul a{
       margin: 0 .8rem 0;
       
 
+      }#box3{
+        height:800px;
+      }
+      #box3 img{
+        margin: 0 0 0 15rem;
       }
       #box1 h1{
         margin-top: 1rem;
