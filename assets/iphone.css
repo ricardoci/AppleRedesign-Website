@@ -123,11 +123,14 @@ img{
 .boxes{
   display: grid;
   grid-auto-flow: column;
-  grid-template-areas: "B A"
-  "C A";
-  padding: 0 10rem 0 10rem ;
-  grid-gap: 3rem;
-  position: relative;
+  grid-template-areas: "A B"
+  "C D";
+  height: 600px;
+  max-width: 600px;
+
+  
+  grid-gap: rem;
+  
   
   
   
@@ -139,117 +142,151 @@ img{
   
   
 }
+.grid{
+  background: linear-gradient(#22002E, #d755d3, #dea5e3);
+  opacity: 80%;
+  border-radius: 77.57px;
+  margin:0 9rem 0 9rem;
+}
 .box{
   border-radius: 77.57px;
-  cursor: pointer;
+  position: relative;
   
-  box-shadow: -5px 0 8px 0  rgba(255, 255, 255, .8 ), 0 6px 20px 0 rgba(255, 255, 255, 0.19) ;
+ 
+  
+  
+  
 }
 .box:hover{
   box-shadow: -5px 0 8px 0  rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
   
 }
 #box1{
-
-  background: linear-gradient(#22002E, #d755d3, #dea5e3);
-  opacity: 80%;
-  
-  grid-area: C;
   
   
- 
+  grid-area: A;
   
 
-  
-  
-  
-  
-  
 
 }
 #box2{
   
-  background: linear-gradient(#22002E, #d755d3, #dea5e3);
-  opacity: 80%;
+  
+ 
   
   grid-area: B;
   
   
 
 }
+#box3{
+  
+  
+  
+  
+  grid-area: C;
+  
+}
+#box4{
+  
+  
+  
+  
+  grid-area: D;
+  
+}
 #box1 img{
-  height: 200.75px;
-  width: 200.75px;
+  height: 150px;
+  width: 120px;
   display: flex;
   margin: auto;
   
   margin-top: 3rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
  
   
+}
+#box2 img{
+  height: 150px;
+  width: 120px;
+  display: flex;
+  margin: auto;
+  
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+}
+#box3 img{
+  height: 150px;
+  width: 120px;
+  display: flex;
+  margin: auto;
+  
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
  
   
   
+}
+#box4 img{
+  height: 150px;
+  width: 120px;
+  display: flex;
+  margin: auto;
+  
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   
 }
 #box1 h1{
   justify-content: center;
   display: flex;
   align-items: center;
-  color:#999999;
-  font-size: 42px;
+  color:#fff;
+  font-size: 24px;
   margin-bottom: 1rem;
 }
-#box2 img{
-  height: 200px;
-  width: 200px;
-  display: block;
-  margin: auto;
-  
-  align-content: center;
-  
-}
+
 #box2 h1{
   justify-content: center;
   display: flex;
   align-items: center;
-  color:#999999;
-  font-size: 42px;
+  color:#fff;
+  font-size: 24px;
   margin-bottom: 1rem;
 }
 #box3 h1{
   justify-content: center;
   display: flex;
   align-items: center;
-  color:#999999;
-  font-size: 42px;
+  color:#fff;
+  font-size: 24px;
   margin-bottom: 1rem;
-}
-#box3 img{
-  height: 578px;
-  max-width: 451px;
-  display: block;
-  margin: auto;
-  position: absolute;
-  bottom:0;
-  right:0;
-  padding:0;
-  overflow: hidden;
-  margin-right: 7.6rem;
-  
   
 }
-#box3{
-  
-  background: linear-gradient(#22002E, #d755d3, #dea5e3);
-  opacity: 80%;
-  
-  grid-area: A;
-  height:67vh;
+#box4 h1{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color:#fff;
+  font-size: 24px;
+  margin-bottom: 1rem;
   
 }
+
+
 footer{  
   display: flex;
   flex-direction: row;
@@ -261,8 +298,7 @@ footer{
   padding:1.5rem;
   border-radius: 50px;
   padding-left: 5rem;
-  margin: 2rem 10rem 2rem 10rem;
-  
+  margin: 2rem 9rem 2rem 9rem;
 
 
 }
@@ -270,6 +306,70 @@ footer ul a{
   font-size: 14px;
 }
 
+#box1  #iPhone14 {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+#box2 .info img {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+#box3 .info img {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+#box4 .info img {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+.info p{
+  display: inline;
+ 
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.box .info{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  
+ 
+ 
+  
+ 
+
+  
+  
+  
+ 
+ 
+}
 
 
 
@@ -284,6 +384,7 @@ footer ul a{
         justify-content: center;
         text-align: center;
       }
+      
       header nav {
         justify-content: center;
       }
@@ -294,6 +395,7 @@ footer ul a{
         padding: 10px 0 10px 0;
         justify-content: center;
         text-align: center;
+        margin: 2rem 2rem 2rem 2rem;
 
       }
   
@@ -306,15 +408,13 @@ footer ul a{
         padding: 10px 0 10px 0;
         justify-content: center;
         text-align: center;
+        margin: 2rem 2rem 2rem 2rem;
       }
       header nav {
         justify-content: center;
       }
       nav a{
         font-size: 25px;
-      }
-      header{
-        margin: 2rem 2rem 2rem 2rem;
       }
       footer{
         padding: 10px 0 10px 0;
@@ -323,15 +423,29 @@ footer ul a{
         margin: 2rem 2rem 2rem 2rem;
 
       }.boxes{
-        padding: 2rem;
+        height: 400px;
+        width: 400px;
+        margin-bottom: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        margin:auto;
+        
+        
       }
-      #box3 img{
-      height: 279px;
-      max-width: 215.5px;
-      margin: 0 .8rem 0;
+      .box{
+        margin:1rem;
+      }
+     
       
-
+      .grid{
+        height: 100%;
+      width: 100%;
+      margin: auto;
+      
       }
+      
+       
       #box1 h1{
         margin-top: 1rem;
       }
@@ -341,14 +455,8 @@ footer ul a{
       #box3 h1{
         margin-top: 1rem;
       }
-      #box2 img{
-        height: 170px;
-        width: 170px;
-        margin-top: 2.5rem;
-        border-radius: 25px;
-        
-  
-        }
+    
+     
     
   }
 
