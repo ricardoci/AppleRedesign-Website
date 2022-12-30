@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <link rel="shortcut ico" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/SignOn.css">
+</head>
+<body>
+    <header>
+        <div class="containerNav">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu" id="my-btn">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-apple">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag">
+                        </a>
+                    </li>
+                </ul>
+                <!-- nav list and nav list mobile  -->
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-apple">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#iMac" class="nav-link">Mac
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">iPad
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iPhone.html" class="nav-link">iPhone
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#watch" class="nav-link">Watch
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">TV
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Music
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Support
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-search">
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-hidden">
+                        <a href="#" class="nav-link nav-link-bag">
+                        </a>
+                    </li>
+                </ul>
+                <!-- nav list nav list larger  -->
+            </nav>
+        </div>
+    </header>
+    <div class="container" id="hide">
+        <form onsubmit="loginfunc()" class="form " id="login">          <!--action="Post"  REMOVED-->
+            <h1 class="form__title" id="result">Sign in to Apple Store</h1>
+            <div class="logo"></div>
+            <div class="form__message form__message--error"></div>           
+            <div class="form__input-group">
+                <input type="username" class="form__input" id="userName" autofocus placeholder="Apple ID">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" id="userPw" class="form__input " autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button login" type="submit" value="Login" onclick="check()">Continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your Password</a>
+            </p>
+            <p class="form__text">
+                <a  class="form__link" href="./" id="linkCreateAccount" >Don't have an account? Create account</a>
+            </p>
+        </form> 
+        <form action="" class="form form__hidden " id="createAccount">         
+            <h1 class="form__title">Create Your Apple ID</h1>
+            <div class="form__message form__message--error"></div>           
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Apple ID">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" id="email" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input " id="password" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input " id="cpass" autofocus placeholder="Confirm Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button button" id="rgstr_btn" type="submit" value="Register" onclick="store()" >Continue</button> 
+            <p class="form__text">
+                <a  class="form__link " href="./" id="linkLogin" >Already have an account? Sign in</a>
+            </p>
+        </form>                   
+    </div>
+
+    <script src="assets/SignOn.js"></script>
+</body>
+</html>
