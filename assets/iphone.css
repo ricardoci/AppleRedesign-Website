@@ -13,6 +13,7 @@ body{
     
     
     
+    
 }
 
 
@@ -30,6 +31,8 @@ header{
     border-radius: 50px;
     padding-left: 5rem;
     margin: 2rem 10rem 2rem 10rem;
+   
+    
 
 }
 
@@ -42,11 +45,15 @@ nav ul{
     
     
     
+    
 }
 .icons{
     justify-content: space-between;
     color: antiquewhite;
     filter:invert(80%);
+    
+    
+    
 }
 
 
@@ -128,9 +135,11 @@ img{
   ;
   height: 600px;
   max-width: 600px;
+  
 
   
-  grid-gap: rem;
+  
+  
   
   
   
@@ -149,6 +158,8 @@ img{
  justify-content: right;
  width: 100%;
  
+ 
+ 
 }
 .photoAd img{
   position: absolute;
@@ -156,6 +167,9 @@ img{
   justify-content: center;
   margin-top: 4rem;
   margin-right: 4rem;
+  z-index: 1;
+  
+  
  
   
  
@@ -166,17 +180,26 @@ img{
   
   
   
+  
 }
 .wrap{
+  
   background: linear-gradient(#22002E, #d755d3, #dea5e3);
-  opacity: 80%;
+  
   border-radius: 77.57px;
   margin:0 9rem 0 ;
   max-width: 100%;
+  z-index: -1;
+  position: relative;
+  
+  
+  
 
 }
-.grid{
-  
+
+
+.grid img{
+  z-index: -1;
 }
 .grid h1{
   font-size: 42px;
@@ -187,6 +210,9 @@ img{
 .box{
   border-radius: 77.57px;
   position: relative;
+  
+ 
+  
   
  
   
@@ -208,6 +234,7 @@ img{
 #box2{
   
   
+  
  
   
   grid-area: B;
@@ -220,10 +247,12 @@ img{
   
   
   
+  
   grid-area: C;
   
 }
 #box4{
+  
   
   
   
@@ -485,6 +514,7 @@ footer ul a{
         justify-content: center;
         gap: 6rem;
         margin:auto;
+       
         
         
       }
@@ -512,6 +542,7 @@ footer ul a{
       }
       .photoAd img{
         display: none;
+        z-index: -1;
       }
     
      
@@ -543,4 +574,71 @@ footer ul a{
     
   
   
+}
+input {
+  display: block;
+  position: relative;
+  opacity: 0;
+  visibility: visible;
+  pointer-events: none;
+  touch-action: none;
+  z-index: 3;
+  
+}
+.dropdown{
+  z-index: 2;
+}
+
+
+.dropdown {
+  background-color: #fff;
+  color:#fff ;
+  display: none;
+  position: absolute;
+  opacity: none;
+  
+  top: calc(100% + 10px);
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 60px;
+  gap: 5px;
+  right: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+justify-content: flex-start;
+z-index: 3;
+
+}
+.dropdown a{
+  color: #fff;
+}
+
+input:checked ~ .dropdown {
+  display: flex;
+  visibility: visible;
+  position: absolute;
+  
+  
+  display: block;
+  z-index: 3;
+ 
+}
+.dropdown textarea{
+  border: none;
+  
+  text-decoration: none;
+ 
+}
+
+.dropdown a {
+  color: chocolate;
+  visibility: visible;
+  position: relative;
+  z-index: 3;
+  
+  
+ 
+
 }
