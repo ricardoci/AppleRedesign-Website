@@ -10,8 +10,9 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve? This project has a simplistic interface. It was built this way to allow users to navigate through with ease. 
 - What did you learn? The most valuable thing I learned was working with others. We didn'nt try it untill the end, but we merged a feature through a pull request.
 
-    
+   ## Mockup
     ![Apple Redesign Website](assets/images//AppleRedesignMockup.png)
+    ## Features Needed
     ![Apple Redesign Website](assets/images//WebsiteFeatures.PNG)
    
 
@@ -21,7 +22,9 @@ Provide a short description explaining the what, why, and how of your project. U
 
 [![LICENSE](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-
+## Collaborators
+- Christian Placensiad
+- Ervin Dassart
 
 
 ## Badges
